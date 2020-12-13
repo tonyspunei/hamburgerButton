@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  height: 5rem;
+  width: 5rem;
+  background: cadetblue;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.menu {
+  height: 20rem;
+  width: 10rem;
+  background: rgba(173, 173, 173, 0.5);
+  position: absolute;
+  top: 8rem;
+  right: 3rem;
+  border-radius: 5px;
+  /* visibility: hidden; */
+}
+
+.menu > ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.menu > ul > li {
+  list-style: none;
+}
+
+.menu > ul > li > a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #096e80;
+}
