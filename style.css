@@ -2,27 +2,50 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+
+  justify-content: center;
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 5rem;
   width: 5rem;
-  background: cadetblue;
   position: fixed;
   top: 1rem;
   right: 1rem;
   cursor: pointer;
+  z-index: 2;
 }
 
 .menu {
-  height: 20rem;
-  width: 10rem;
-  background: rgba(173, 173, 173, 0.5);
   position: absolute;
-  top: 8rem;
-  right: 3rem;
   border-radius: 5px;
-  /* visibility: hidden; */
+  visibility: hidden;
+  height: 2px;
+  width: 2px;
+  top: -2rem;
+  right: -6rem;
+  transition: all 0.4s ease;
+}
+
+.toggle {
+  visibility: visible;
+  height: 90%;
+  margin: 2rem auto;
+  width: 40%;
+  transition: all 0.4s ease;
+  background: rgb(0, 0, 0);
+  top: 0rem;
+  right: 30%;
 }
 
 .menu > ul {
@@ -40,7 +63,7 @@
 
 .menu > ul > li > a {
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 3rem;
   font-family: Arial, Helvetica, sans-serif;
   color: #096e80;
 }
